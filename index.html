@@ -1,1 +1,19 @@
-coming soon
+---
+layout: default
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a><span class="right date">{{ post.date | date_to_string }}</span></li>
+    {% endfor %}
+  </ul>
+  {% if paginator.previous_page == 1 %}
+      <span class="right"><a href="/">Newer Entries &raquo;&raquo;</a></span>
+    {% elsif paginator.previous_page %}
+      <span class="right"><a href="/page{{ paginator.previous_page }}">Newer Entries &raquo;&raquo;</a></span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <span><a href="/page{{ paginator.next_page }}">&laquo;&laquo; Older Entries</a></span>
+    {% endif %}
+</div>

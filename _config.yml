@@ -1,0 +1,7 @@
+safe: true
+auto: true
+permalink: /posts/:year/:title
+auto: false
+paginate: 50
+
+

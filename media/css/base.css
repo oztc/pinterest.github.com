@@ -1,0 +1,309 @@
+body {
+  background: ##FCF9F9;
+  font: normal 14px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 3em 0 0;
+}
+
+a, a:visited, a:active {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #cc2127;
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+p, ul, ol, blockquote {
+  margin: 0 0 1.5em;
+}
+
+ul, ol, blockquote {
+  padding: 0 2em;
+}
+
+blockquote {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+/* BASIC LAYOUT */
+#contain, #footer-container {
+  margin: 0 auto;
+  width: 55em;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+  float: left;
+  margin: 0 0 1.5em;
+  width: 16em;
+}
+
+#sidebar p {
+  font-size: .9em;
+}
+
+#sidebar h1 {
+  display: block;
+  background: url(http://d3io1k5o0zdpqr.cloudfront.net/images/about/LogoAbout.png) no-repeat;
+  height: 40px; width:150px; 
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 0 0 1em;
+  padding: 0;
+  text-indent: -9999px;
+} 
+
+#sidebar h1 a, #sidebar h1 a:visited, #sidebar h1 a:active {
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#sidebar h1 a:hover {
+  color: #cc2127;
+}
+
+#sidebar h1 a {
+  display: block;
+}
+
+#sidebar h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 .25em;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#sidebar #about {
+  margin: 0 0 3em;
+}
+
+#sidebar #twitter_div ul,
+#sidebar #other ul {
+  list-style: none;
+  margin: 0 0 3em;
+  padding: 0;
+}
+
+#sidebar #twitter_update_list a {
+  display: block;
+}
+
+#sidebar #other a, #sidebar #other a:visited, #sidebar #other a:active {
+  text-decoration: none;
+  font-size: 1em;
+  color: #221919;
+  line-height: 2em;
+}
+
+
+/* FOOTER */
+#footer {
+  border-top: 4px solid #cc2127;
+  background: #333333;
+  color: #ffffff;
+  clear: both;
+  margin: 0;
+  overflow: auto;
+  padding: 0 0.5em;
+}
+
+  #footer #footer-container {
+    margin: 0 auto;
+    padding: 0.5em 0;
+    width: 55em;
+  }
+  
+  #footer a, #footer a:visited, #footer a:active {
+    color: #cc2127;
+  }
+
+  #footer a:hover {
+    color: #ffffff;
+  }
+
+  #footer h4 {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 0.75em;
+  }
+  
+  #footer #colophon {
+    margin-right: 39em;
+  }
+
+  #footer #following {
+    float: right;
+    width: 35.5em;
+  }
+
+    #footer #following ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+      #footer #following ul li {
+        float: left;
+        margin: 0 0.5em 0.5em 0;
+      }
+
+
+/* PREVIOUS-NEXT LINKS */  
+#pagination a, #pagination a:visited, #pagination a:active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#pagination #prev {
+  margin-right: 2em;
+}
+
+#pagination #next {
+  margin-left: 2em;
+}
+
+
+/* CONTENT */
+#content {
+  margin-bottom: 4.5em;
+  margin-left: 18.5em;
+  min-width: 500px;
+}
+
+#content .date {
+  border-bottom: 1px solid #cc2127;
+  color: #cc2127;
+  display: block;
+  letter-spacing: .1em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+#content h2 {
+  font-size: 1.4em;
+  line-height: 1.1em;
+  margin: .25em 0 .75em;
+}
+
+#content img {
+  width: 510px;
+}
+
+.post-footer {
+  color: #999999;
+  font-size: .8em;
+  text-align: right;
+}
+
+	.post-footer .notes-link {
+		margin-left: 0.5em;
+		text-decoration: undelrine;
+	}
+	
+.post-footer .permalink {
+  margin-left: 0.5em;
+}
+
+.post-footer .reblog {
+  font-style: italic;
+  margin-left: 1em;
+}
+
+.post-footer .tags {
+  display: block;
+}
+
+.regular, .quote, .link, .photo, .conversation, .video, .audio, .photoset-post {
+  margin: 0 0 4.5em;
+}
+
+.regular img {
+	max-width: 100%;
+}
+
+.regular h4 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  margin-top: 2.2em;
+}
+
+.quote big {
+  color: #cc2127;
+  font: bold 4em/0 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 .1em;
+  vertical-align: -.45em;
+}
+
+.quote .words {
+  font: bold 1.1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.quote .source {
+  display: block;
+  margin-top: .5em;
+  padding: 0;
+}
+
+.link .link-body, .quote .quote-body {
+  margin-bottom: 1.5em;
+}
+
+.conversation ul {
+  list-style: none;
+  padding: 0 1em;
+}
+
+.conversation ul li .person {
+  color: #cc2127;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+	/* NOTES */
+	#notes-container { margin-top: 3em; }
+	ol.notes { display: block; margin: 0; padding: 0; }
+	ol.notes li.note { margin: 0 0 10px 0; padding: 0 0 10px 0 }
+	ol.notes img.avatar { display: none; }
+
+.clear {
+	clear: both;
+}
+
+	#disqus_thread {
+		margin: 3em 0;
+	}
+
+.info h1 { display: block; text-indent: -9999px; background: url(http://d3io1k5o0zdpqr.cloudfront.net/images/PinterestLogoNew.gif) no-repeat; margin: 0 auto; width: 230px; height: 62px; }
+.info p { display: block; margin: 5px auto 0 !important; text-align: center; }
+
+body { background: #e8e7e3 !important; }
+
+h2 a { color: #2C2C2C !important; text-decoration: none !important; }
