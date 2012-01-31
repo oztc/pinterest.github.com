@@ -26,7 +26,7 @@ it's a straight key-value store.  Inserts require pulling the compressed list ou
 
 <br>
 So, we cheated.  Memcache does have an *append* operator which we use to append integers onto a value.  We just
-need a separator, like so:
+need a separator:
 
     class MemcacheList(object):
       def push(self, key, value):
