@@ -110,8 +110,8 @@ Alternatively, you could simply make remove invalidate the cache line -- the pen
 
 ### Quick Afterward - Why not use Redis Strings instead of Memcache?
 
-Because Redis strings don't support an append that fails on miss.  Also, we do tend to lean toward Memcache when
-we can.  It's much more developmentally stable and simple -- it's basically memory attached sockets.
+Because Redis strings don't support an append operation that fails on miss.  Also, we tend toward Memcache when
+possible.  It's much more developmentally stable and simple -- it's basically memory attached sockets.
 
 
 
